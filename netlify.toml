@@ -1,0 +1,7 @@
+[build]
+command = "npm install && npm run build"
+functions = "functions"
+[build.environment]
+API_KEY = '6791'
+[dev]
+publish = "dist"
