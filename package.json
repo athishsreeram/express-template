@@ -33,7 +33,9 @@
     "netlify-lambda": "^2.0.1",
     "node-cron": "^2.0.3",
     "node-fetch": "^2.6.1",
+    "pug": "^3.0.2",
     "request": "^2.88.2",
-    "serverless-http": "^2.6.0"
+    "serverless-http": "^2.6.0",
+    "stripe": "^8.137.0"
   }
 }

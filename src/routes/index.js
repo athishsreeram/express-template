@@ -6,16 +6,16 @@ var cors = require("cors");
 
 let routes = (app) => {
   router.get("/gd/ping", controller.ping);
+
+  router.get("/hoe/stripekey", controller.stripeKey);
+  router.post("/hoe/charge", controller.charge);
+
   app.use(cors());
 
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
 
-  //app.use(router);
-
   app.use("/.netlify/functions/server", router);
-
-  //task.start();
 };
 
 module.exports = routes;
